@@ -1,0 +1,48 @@
+:root {
+  --white: #fff;
+  --black: rgb(22, 22, 22);
+
+  --header-height: 80px;
+
+
+
+}
+
+header {
+  position: ;
+  height: var(--header-height);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: yellowgreen;
+}
+
+.header-wrapper {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.body-wrapper {
+  margin-top: var(--header-height);
+  color: var(--white);
+  background-color: var(--black);
+}
+
+body {
+  font-size: 18px;
+  background-color: var(--white);
+  font-family: 'Oswald', sans-serif;
+}
+
+h1 {
+  margin: 1px 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+p {
+  margin: 0;
+  font-family: 'Lato';
+  padding: 10px 30px 10px 30px;
+}
