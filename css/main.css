@@ -5,6 +5,7 @@
   --alpha-purple: rgb(73, 21, 66);
 
   --header-height: 100px;
+  --footer-height: 60px;
 }
 
 header {
@@ -38,7 +39,6 @@ header:hover {
 
 .main-button /*HOME*/ {
   display: inline-table;
-  text-align: center;
   height: var(--header-height);
   font-size: 30px;
 }
@@ -67,7 +67,7 @@ header:hover {
 }
 
 .header-menu li a {
-  padding: calc(var(--header-height) / 2) 20px;
+  padding: calc(var(--header-height) / 2) /*20px*/;
   text-align: center;
   font-size: 20px;
 }
@@ -93,6 +93,7 @@ body {
 
 .body-wrapper {
   margin-top: var(--header-height);
+  margin-bottom: var(--footer-height);
   color: var(--white);
   background-color: var(--black);
   border-left: 5px solid var(--purple);
@@ -110,4 +111,29 @@ p {
   margin: 0;
   font-family: 'Lato';
   padding: 10px 30px 10px 30px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--purple);
+  height: var(--footer-height);
+}
+
+.footer-table {
+  display: inline-table;
+  width: 100%;
+  float: right;
+}
+
+.footer-table li {
+  display: table-cell;
+  height: var(--footer-height);
+}
+
+.footer-table a li {
+  float: right;
+  text-align: center;
 }
