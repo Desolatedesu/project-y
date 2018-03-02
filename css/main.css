@@ -17,6 +17,7 @@ header {
   box-shadow: 0px 0px 30px 30px rgba(0, 0, 0, 0.425);
   transition-duration: 1s;
   opacity: 0.8;
+  overflow: hidden;
 }
 
 header:hover {
@@ -36,39 +37,49 @@ header:hover {
 }
 
 .main-button /*HOME*/ {
-  float: left;
-  display: table-cell;
-  vertical-align: middle;
+  display: inline-table;
   text-align: center;
   height: var(--header-height);
   font-size: 30px;
 }
 
-.main-button /*HOME*/ a:hover {
+.main-button a {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 20px;
+}
+
+.main-button a:hover {
   background: var(--alpha-purple);
 }
 
-.header-menu /*header__menu*/li {
+.header-menu {
+  display: inline-table;
+  float: right;
+  list-style-type: none;
   margin: 0;
-  padding-left: 50px;
-  float: left;
-  width: 60px;
-  height: var(--header-height);
 }
 
-.header-menu a {
-  text-align: center;
+.header-menu li {
+  display: table-cell;
+  height: var(--header-height);
   vertical-align: middle;
+}
+
+.header-menu li a {
+  padding: calc(var(--header-height) / 2) 20px;
+  text-align: center;
   font-size: 20px;
 }
+
+.header-menu li a:hover {
+  background: var(--alpha-purple);
+}
+
 
 a {
   color: var(--white);
   text-decoration: none;
-}
-
-li {
-  list-style: none;
 }
 
 body {
