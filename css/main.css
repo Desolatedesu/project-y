@@ -127,16 +127,17 @@ footer {
   width: 100%;
   list-style-type: none;
   margin: 0;
-}
-
-.footer-table a {
-  padding: calc(var(--footer-height) / 3);
+  padding: 0;
 }
 
 .footer-table li {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
+  padding: calc(var(--footer-height) / 3);
+}
+
+.footer-table li a {
   padding: calc(var(--footer-height) / 3);
 }
 
