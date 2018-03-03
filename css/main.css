@@ -125,15 +125,21 @@ footer {
 .footer-table {
   display: inline-table;
   width: 100%;
-  float: right;
+  list-style-type: none;
+  margin: 0;
+}
+
+.footer-table a {
+  padding: calc(var(--footer-height) / 3);
 }
 
 .footer-table li {
   display: table-cell;
-  height: var(--footer-height);
+  vertical-align: middle;
+  text-align: center;
+  padding: calc(var(--footer-height) / 3);
 }
 
-.footer-table a li {
-  float: right;
-  text-align: center;
+.footer-table li:hover {
+  background: var(--alpha-purple);
 }
